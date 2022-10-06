@@ -39,8 +39,10 @@ body {
   color: var(--title-text-color);
 }
 
-/* a {
-    text-decoration: none */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo.header {
   color: var(--title-text-color);
@@ -74,9 +76,39 @@ body {
   text-decoration: none;
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .auth-nav a:hover,
@@ -118,6 +150,14 @@ img {
 
 .benefits-text {
   line-height: 1.71;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefits .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .button {
@@ -181,6 +221,23 @@ img {
   background-color: var(--buttom-hover-color);
   box-shadow: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.examples.section {
+  padding-top: 0;
+}
+
+.team.list {
+  display: flex;
+}
+
+.team.list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 footer {
@@ -270,6 +327,15 @@ footer a {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.examples {
+  display: flex;
+}
+
+.examples .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team h3 {
@@ -277,11 +343,13 @@ footer a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team p {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .works h2 {
