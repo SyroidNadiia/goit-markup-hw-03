@@ -257,47 +257,6 @@ img {
   margin-right: 30px;
 }
 
-footer {
-  background-color: var(--footer-background-color);
-}
-
-footer a {
-  text-decoration: none;
-}
-
-.logo.footer {
-  color: var(--white);
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.address-legal {
-  color: var(--white);
-  line-height: 1.71;
-  font-style: normal;
-}
-
-.mail,
-.phone {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.71;
-  font-style: normal;
-}
-
-.logo.footer:hover:hover,
-.logo.footer:focus {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-}
-
-.address a:hover,
-.address a:focus {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-}
-
 .team {
   background-color: var(--secondary-background-color);
 }
@@ -421,4 +380,55 @@ footer a {
 .works p {
   font-size: 16px;
   line-height: 1.88;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.address.list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.logo.footer {
+  color: var(--white);
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding-top: 60px;
+}
+
+.address-legal {
+  color: var(--white);
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.mail,
+.phone {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.logo.footer:hover:hover,
+.logo.footer:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+.address a:hover,
+.address a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
 }
